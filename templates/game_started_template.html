@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/game.js"></script>
+</head>
+<body onload="load();">
+Users:<br/>
+{% for user in users %}
+{% if user==you %}
+<b>{{user}}</b><br/>
+{% else if user==dealer %}
+<i>{{user}}</i><br/>
+{% else %}
+{{user}}<br/>
+{% endif %}
+{% endfor %}
+<form method="POST" action="/game">
+</form>
+</body>
+</html>

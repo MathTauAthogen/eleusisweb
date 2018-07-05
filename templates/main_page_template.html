@@ -1,12 +1,13 @@
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="/init.js"></script>
 </head>
-<body onload="load();">
-<form id="dirty" name="dirty">
-<input type="hidden" id="username"/>
-<input type="hidden" id="password"/>
+<body>
+<form method="POST" action="/verify">
+<input type='text' placeholder = 'Game ID' id='id' name='id'/><br/>
+<input type='text' placeholder = 'Username' id='name'name='name'/><br/>
+<input type='password' placeholder = 'Password' id='pass' name='pass'/><br/>
+<input type="submit" value="Go">
 </form>
 </body>
 </html>
